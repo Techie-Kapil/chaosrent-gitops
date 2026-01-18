@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: demo-nginx
+  name: chaos-nginx-killer
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/Techie-Kapil/chaosrent-gitops.git
     targetRevision: main
-    path: apps/demo-nginx/overlays/prod
+    path: apps/chaos-nginx-killer
   destination:
     server: https://kubernetes.default.svc
     namespace: demo
@@ -17,5 +17,5 @@ spec:
       prune: true
       selfHeal: true
     syncOptions:
-    - CreateNamespace=true
+      - CreateNamespace=true
 
