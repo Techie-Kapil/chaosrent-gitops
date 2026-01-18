@@ -1,0 +1,22 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: chaos-nginx-killer
+  namespace: demo
+spec:
+  schedule: "*/1 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          serviceAccountName: default
+          containers:
+          - name: killer
+            image: bitnami/kubectl:latest
+            command:
+            - /bin/sh
+            - -c
+            - |
+              kubectl delete pod -l app=demo-nginx -n demo || true
+          restartPolicy: Never
+
