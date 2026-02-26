@@ -19,6 +19,21 @@ The objective is to demonstrate real-world DevOps deployment automation and fail
 
 ---
 
+## 🖥️ Infrastructure Setup (Homelab Environment)
+
+This platform was deployed and tested in a self-managed homelab environment rather than a local simulator.
+
+Environment Details:
+- K3s cluster running on local Linux server
+- SSH-based remote cluster management
+- Real network exposure via NodePort
+- Persistent cluster state management
+- Manual infrastructure provisioning and troubleshooting
+
+This setup provided hands-on experience with real-world infrastructure challenges including networking, access management, and cluster debugging.
+
+---
+
 ## 🏗️ Architecture
 
 GitHub Repository  
