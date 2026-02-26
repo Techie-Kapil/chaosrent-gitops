@@ -144,6 +144,8 @@ Application exposed via:
 
 (📸 Add Screenshot Here -- TODO)
 
+---
+
 ## 🔐 DevOps Best Practices Demonstrated
 
 - Git as single source of truth
@@ -169,9 +171,11 @@ Application exposed via:
 - Helm-based deployment
 - Slack/Email alerting integration
 
+--- 
 ## 👨‍💻 Author
 
 Kapil
+
 
 
 
