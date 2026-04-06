@@ -92,7 +92,6 @@ kubectl create namespace argocd
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 ```
 
-(📸 Add Screenshot Here -- TODO)
 
 ### 3️⃣ Deploy Applications via GitOps
 
@@ -117,7 +116,7 @@ Check services:
 kubectl get svc -n demo
 ```
 
-(📸 Add Screenshot Here -- TODO)
+.....
 
 💥 Chaos Testing Validation
 
@@ -142,7 +141,7 @@ Application exposed via:
 - Cluster DNS
 - Optional remote access configuration
 
-(📸 Add Screenshot Here -- TODO)
+.....
 
 ---
 
